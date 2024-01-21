@@ -1,0 +1,6 @@
+#Fofa API 配置项
+FOFA:
+  URL: "https://fofa.info"
+  EMAIL: ""
+  TOKEN: ""
+  FOFAPI: "https://fofa.info/api/v1/search/all"
