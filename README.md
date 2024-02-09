@@ -19,10 +19,12 @@ urls是一个用于快速检查URL可用性并获取相关信息的工具。它�
 ```bash
 urls -f url.txt
 ```
+<img width="647" alt="image" src="https://github.com/sspsec/urls/assets/142762749/98df3569-c16b-4c43-a716-3d8a0c48ec33">
 
 从fofa中提取资产，进行探活
 ```bash
 urls -ffq domain="xxx.edu.cn" -p 1
 ```
+<img width="1045" alt="image" src="https://github.com/sspsec/urls/assets/142762749/7f8c7129-9e93-4b63-816b-8f7e0aa0361f">
 
  
