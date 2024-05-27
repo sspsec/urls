@@ -22,5 +22,6 @@ urls -f url.txt
 ```bash
 urls -f url.txt -o
 ```
+<img width="910" alt="image" src="https://github.com/sspsec/urls/assets/142762749/563aa1ec-0e92-4f5e-82e5-bc61df6476f8">
 
  
