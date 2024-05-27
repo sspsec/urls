@@ -2,9 +2,8 @@ package common
 
 import "flag"
 
-func Flag(Info *FofaQuery) {
+func Flag() {
 	flag.StringVar(&UrlFile, "f", "", "urls file default url.txt")
-	flag.StringVar(&Info.Query, "ffq", "", "fofa query field")
-	flag.IntVar(&Info.Page, "p", 10, "fofa query page")
+	flag.BoolVar(&OutputToFile, "o", false, "Output results to file")
 	flag.Parse()
 }

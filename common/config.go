@@ -1,35 +1,16 @@
 package common
 
-type FofaAPI struct {
-	URL    string `yaml:"URL"`
-	EMAIL  string `yaml:"EMAIL"`
-	TOKEN  string `yaml:"TOKEN"`
-	FOFAPI string `yaml:"FOFAPI"`
-}
-
-type FofaConfig struct {
-	Fofa FofaAPI `yaml:"FOFA"`
-}
-
-type FofaResult struct {
-	Error           bool            `json:"error"`
-	ConsumedFPoint  int             `json:"consumed_fpoint"`
-	RequiredFPoints int             `json:"required_fpoints"`
-	Size            int             `json:"size"`
-	Page            int             `json:"page"`
-	Mode            string          `json:"mode"`
-	Query           string          `json:"query"`
-	Results         [][]interface{} `json:"results"`
-}
-
-type FofaQuery struct {
-	Query string
-	Page  int
-}
+import "os"
 
 var (
-	UrlFile string
-	Urls    []string
+	UrlFile      string
+	OutputToFile bool
+	OutputFile   *os.File
+	Urls         []string
+)
+
+const (
+	concurrencyLimit = 10
 )
 
 var (

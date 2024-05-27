@@ -6,11 +6,9 @@ import (
 )
 
 func main() {
-	var FofaInfo common.FofaQuery
-	common.Flag(&FofaInfo)
-	source.Fofa(&FofaInfo)
+	common.Flag()
 	//print(common.GetConfigFilePath())
-
+	defer common.OutputFile.Close()
 	source.UrlScan()
 
 }
